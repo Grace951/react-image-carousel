@@ -1,0 +1,52 @@
+{
+  "name": "react-image-carousel",
+  "version": "1.0.0",
+  "description": "simple react image carousel",
+  "main": "dist/react-image-carousel.min.js",
+  "scripts": {
+    "build": "webpack --mode=build",
+    "dev": "webpack --progress --colors --watch --mode=dev"
+  },
+  "keywords": [
+    "react",
+    "image",
+    "carouset"
+  ],
+  "author": "Ching-Ching Yeh <learningg@gmail.com> (https://github.com/Grace951)",
+  "license": "MIT",
+  "dependencies": {
+    "babel-polyfill": "^6.16.0",
+    "eslint-loader": "^1.6.1",
+    "react": "^15.3.2",
+    "react-addons-css-transition-group": "^15.4.1",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-eslint": "^7.1.0",
+    "babel-loader": "^6.2.7",
+    "babel-plugin-react-display-name": "^2.0.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "cross-env": "^3.1.3",
+    "css-loader": "^0.25.0",
+    "eslint": "^3.9.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^6.6.0",
+    "eslint-watch": "^2.1.14",
+    "eventsource-polyfill": "^0.9.6",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "image-webpack-loader": "^3.0.0",
+    "node-sass": "^3.11.2",
+    "npm-run-all": "^3.1.1",
+    "resolve-url-loader": "^1.6.0",	
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.3"
+  }
+}

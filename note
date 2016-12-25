@@ -1,0 +1,38 @@
+//Sublime text
+npm install -g eslint babel-eslint eslint-plugin-react
+
+
+// 按指示初始化 NPM 設定檔 package.json
+npm init
+
+// --save-dev 是可以讓你將安裝套件的名稱和版本資訊存放到 package.json，方便日後使用
+npm install --save react react-dom babel-polyfill react-redux react-router react-router-redux redux redux-thunk
+
+npm install --save-dev babel-cli babel-core babel-plugin-react-display-name babel-loader babel-preset-es2015 babel-preset-stage-0 babel-preset-react babel-register colors compression cross-env enzyme eventsource-polyfill expect jsdom mocha nock npm-run-all open react-addons-test-utils redux-immutable-state-invariant redux-mock-store rimraf webpack html-webpack-plugin
+
+//Express + hot reload
+npm install --save-dev express webpack-dev-middleware webpack-hot-middleware babel-preset-react-hmre
+
+// eslint
+npm install --save-dev eslint babel-eslint eslint-plugin-react eslint-watch eslint-plugin-import
+
+//SASS CSS
+npm install sass-loader node-sass  css-loader style-loader  resolve-url-loader --save-dev
+npm install --save-dev extract-text-webpack-plugin
+//為解決 url() 路徑問題，於webpack.config.js指定 includePaths[]
+
+
+//font-awesome
+npm install --save-dev font-awesome font-awesome-sass-loader css-loader style-loader sass-loader
+
+
+//IMAGE
+npm install --save-dev image-webpack-loader file-loader
+// image-webpack :壓縮
+
+
+//build
+npm run production
+
+//live reload
+npm run start
