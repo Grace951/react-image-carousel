@@ -98,6 +98,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			_this.setCurrent = _this.setCurrent.bind(_this);
 			_this.addCurrent = _this.addCurrent.bind(_this);
 			_this.subCurrent = _this.subCurrent.bind(_this);
+			//this.getMainImgStyle = this.getMainImgStyle.bind(this);
 			return _this;
 		}
 	
@@ -117,13 +118,13 @@ return /******/ (function(modules) { // webpackBootstrap
 			value: function componentWillUnmount() {
 				if (this._timer) clearInterval(this._timer);
 			}
-		}, {
-			key: 'getMainImgStyle',
-			value: function getMainImgStyle() {
-				return {
-					backgroundImage: 'url( ' + this.props.images[this.state.currentId] + ')'
-				};
-			}
+			/*
+	  getMainImgStyle(){
+	  	return {
+	  		backgroundImage: `url( ${this.props.images[this.state.currentId]})`,
+	  	};
+	  }*/
+	
 		}, {
 			key: 'addCurrent',
 			value: function addCurrent() {
@@ -183,8 +184,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	Carousel.defaultProps = {
 		images: [],
 		thumb: true,
-		loop: true,
-		autoplay: 3000
+		loop: true
 	};
 	
 	exports.default = Carousel;
@@ -8369,9 +8369,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 			var _this = _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).call(this, props));
 	
-			_this.getActiveStyle.bind(_this);
-			_this.getFooterStyle.bind(_this);
-			_this.changeCurrent.bind(_this);
+			_this.getActiveStyle = _this.getActiveStyle.bind(_this);
+			_this.getFooterStyle = _this.getFooterStyle.bind(_this);
+			_this.changeCurrent = _this.changeCurrent.bind(_this);
 			return _this;
 		}
 	
@@ -8398,7 +8398,8 @@ return /******/ (function(modules) { // webpackBootstrap
 		}, {
 			key: "changeCurrent",
 			value: function changeCurrent(e) {
-				this.props.setCurrent(e.target.getAttribute("id"));
+				var id = parseInt(e.target.getAttribute("data-id"));
+				this.props.setCurrent(id);
 			}
 		}, {
 			key: "render",
@@ -8427,7 +8428,7 @@ return /******/ (function(modules) { // webpackBootstrap
 		images: _react2.default.PropTypes.array.isRequired,
 		thumb: _react2.default.PropTypes.bool,
 		currentId: _react2.default.PropTypes.number,
-		setCurrent: _react2.default.PropTypes.func
+		setCurrent: _react2.default.PropTypes.func.isRequired
 	};
 	
 	exports.Footer = Footer;

@@ -7,7 +7,8 @@
     "start": "npm-run-all --parallel open:src lint:watch",
     "open:src": "babel-node tools/srcServer.js",
     "lint": "node_modules/.bin/esw webpack.config.* src tools",
-    "lint:watch": "npm run lint -- --watch"
+    "lint:watch": "npm run lint -- --watch",
+	"build": "babel-node tools/build.js"
   },
   "author": "Ching-Ching Yeh <learningg@gmail.com> (https://github.com/Grace951)",
   "license": "MIT",

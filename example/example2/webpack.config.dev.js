@@ -66,12 +66,6 @@ export default {
 					'file-loader?name=img/[name].[ext]&context=./img',
 					'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
 				]
-			},
-			{
-				test: /\.(json)$/i,
-				loaders: [
-					'file-loader?name=json/[name].[ext]&context=./json'
-				]
 			}
 		]
 	}

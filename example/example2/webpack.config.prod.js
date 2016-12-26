@@ -45,7 +45,6 @@ export default {
 				include: path.join(__dirname, 'src'),
 				exclude: /(node_modules)/,
 				loaders: ['babel']
-				//多個: loaders: [],    一個: loader: ''
 			},
 			{
 				test   : /\.css$/,
@@ -68,12 +67,6 @@ export default {
 				loaders: [
 					'file-loader?name=img/[name].[ext]&context=./img',
 					'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
-				]
-			},
-			{
-				test: /\.(json)$/i,
-				loaders: [
-					'file-loader?name=json/[name].[ext]&context=./json'
 				]
 			}
 		]
