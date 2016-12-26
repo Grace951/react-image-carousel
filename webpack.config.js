@@ -54,18 +54,18 @@ var config = {
 				{ publicPath: '../'}
 			)
 		},	  
-      {
-        test: /(\.jsx|\.js)$/,
-        loader: "eslint-loader",
-        exclude: /node_modules/
-      }
     ]
   },
   resolve: {
     root: path.resolve('./src'),
     extensions: ['', '.js']
   },
-  plugins: plugins
+  plugins: plugins,
+  externals: {
+    'react': 'react', // Case matters here 
+    'react-dom' : 'reactDOM', // Case matters her
+    'react-addons-css-transition-group' : 'reactAddonsCssTransitionGroup'
+  },  
 };
 
 module.exports = config;

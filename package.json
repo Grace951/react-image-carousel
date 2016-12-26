@@ -15,7 +15,9 @@
   "author": "Ching-Ching Yeh <learningg@gmail.com> (https://github.com/Grace951)",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^0.14.0 || ^15.4.0"
+    "react": "^0.14.0 || ^15.4.0",
+    "react-addons-css-transition-group": "^0.14.0 || ^15.4.0",
+    "react-dom": "^0.14.0 || ^15.4.0"
   },
   "dependencies": {},
   "devDependencies": {
