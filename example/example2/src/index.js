@@ -14,9 +14,9 @@ let images = [
 	'/img/landing5.jpg'
 ];
 
-render(<div className="my-carousel">
+render((<div className="my-carousel">
 			<Carousel images={images} 
 						thumb={true}
 						loop={true}
 						autoplay={3000}/>
-		</div>, document.getElementById("app"))
+</div>), document.getElementById("app"));
