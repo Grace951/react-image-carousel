@@ -1,6 +1,6 @@
 {
   "name": "react-image-carousel",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "simple react image carousel",
   "main": "dist/react-image-carousel.min.js",
   "scripts": {
