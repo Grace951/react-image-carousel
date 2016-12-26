@@ -81,4 +81,4 @@ Carousel.defaultProps = {
 
 
 
-export {Carousel};
+export default Carousel;

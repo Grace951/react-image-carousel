@@ -14,7 +14,12 @@ var plugins = [
 var outputFile;
 
 if (env === 'build') {
-  plugins.push(new UglifyJsPlugin({ minimize: true }));
+	const GLOBALS = {
+		'process.env.NODE_ENV': JSON.stringify('production')
+	};
+	plugins.push(new webpack.DefinePlugin(GLOBALS));
+
+  plugins.push(new UglifyJsPlugin({ minimize: true }));  
   outputFile = libraryName + '.min.js';
 } else {
   outputFile = libraryName + '.js';
