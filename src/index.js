@@ -14,6 +14,7 @@ class Carousel extends React.Component{
 		this.setCurrent = this.setCurrent.bind(this);
 		this.addCurrent = this.addCurrent.bind(this);
 		this.subCurrent = this.subCurrent.bind(this);
+		//this.getMainImgStyle = this.getMainImgStyle.bind(this);
 	}
 	
 	componentDidMount () {
@@ -25,12 +26,12 @@ class Carousel extends React.Component{
 		if (this._timer)
 			clearInterval(this._timer );
 	}
-	
+	/*
 	getMainImgStyle(){
 		return {
 			backgroundImage: `url( ${this.props.images[this.state.currentId]})`,
 		};
-	}
+	}*/
 	addCurrent(){
 		this.setCurrent( this.state.currentId + 1);
 	}
@@ -75,8 +76,7 @@ Carousel.propTypes = {
 Carousel.defaultProps = {
   images: [],
   thumb: true,
-  loop: true,
-  autoplay: 3000
+  loop: true
 };
 
 

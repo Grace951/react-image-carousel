@@ -3,9 +3,9 @@ import React from 'react';
 class Footer extends React.Component{
 	constructor(props) {
 		super(props);
-		this.getActiveStyle.bind(this);
-		this.getFooterStyle.bind(this);
-		this.changeCurrent.bind(this);		
+		this.getActiveStyle = this.getActiveStyle.bind(this);
+		this.getFooterStyle = this.getFooterStyle.bind(this);
+		this.changeCurrent = this.changeCurrent.bind(this);		
 	}
 	getActiveStyle(id){
 		let s = {
@@ -24,7 +24,8 @@ class Footer extends React.Component{
 		return s;
 	}
 	changeCurrent(e){
-		this.props.setCurrent(e.target.getAttribute("id"));
+		let id = parseInt(e.target.getAttribute("data-id"));
+		this.props.setCurrent(id);
 	}
 	render(){
 		let footerClass= this.props.thumb?"carousel-thumb":"carousel-dot";
@@ -43,7 +44,7 @@ Footer.propTypes = {
   images: React.PropTypes.array.isRequired,
   thumb: React.PropTypes.bool,
   currentId: React.PropTypes.number,
-  setCurrent: React.PropTypes.func
+  setCurrent: React.PropTypes.func.isRequired
 };
 
 export {Footer};
