@@ -10,17 +10,16 @@
   "keywords": [
     "react",
     "image",
-    "carouset"
+    "carousel"
   ],
   "author": "Ching-Ching Yeh <learningg@gmail.com> (https://github.com/Grace951)",
   "license": "MIT",
-  "dependencies": {
-    "babel-polyfill": "^6.16.0",
-    "eslint-loader": "^1.6.1",
+  "peerDependencies": {
     "react": "^15.3.2",
     "react-addons-css-transition-group": "^15.4.1",
     "react-dom": "^15.3.2"
   },
+  "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.18.2",
