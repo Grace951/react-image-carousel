@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/react-image-carousel.svg)](https://www.npmjs.com/package/react-image-carousel)
 [![Download Count](http://img.shields.io/npm/dm/react-image-carousel.svg?style=flat)](https://www.npmjs.com/package/react-image-carousel)
 
-![demo gif](https://github.com/Grace951/react-image-carousel/tree/master/example/example2/screenshot.png)
+![demo gif](https://github.com/Grace951/react-image-carousel/raw/master/example/example2/screenshot.png)
 
 React image carousel is a React component for building image galleries and carousels
 * Thumbnail navigation configurable
