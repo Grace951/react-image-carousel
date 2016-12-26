@@ -63,8 +63,8 @@ var config = {
   plugins: plugins,
   externals: {
     'react': 'react', // Case matters here 
-    'react-dom' : 'reactDOM', // Case matters her
-    'react-addons-css-transition-group' : 'reactAddonsCssTransitionGroup'
+    //'react-dom' : 'reactDOM', // Case matters her
+    'react-addons-css-transition-group' : 'ReactCSSTransitionGroup'
   },  
 };
 

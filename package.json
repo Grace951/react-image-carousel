@@ -16,9 +16,8 @@
   "license": "MIT",
   "peerDependencies": {},
   "dependencies": {
-    "react": "^0.14.0 || ^15.4.0",
-    "react-addons-css-transition-group": "^0.14.0 || ^15.4.0",
-    "react-dom": "^0.14.0 || ^15.4.0"
+    "react": "^15.0.0",
+    "react-addons-css-transition-group": "^15.0.0",
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
@@ -44,9 +43,6 @@
     "image-webpack-loader": "^3.0.0",
     "node-sass": "^3.11.2",
     "npm-run-all": "^3.1.1",
-    "react": "^15.0.0",
-    "react-addons-css-transition-group": "^15.0.0",
-    "react-dom": "^15.0.0",
     "resolve-url-loader": "^1.6.0",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
