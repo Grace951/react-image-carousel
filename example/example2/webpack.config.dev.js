@@ -46,7 +46,7 @@ export default {
 			},
 			{
 				test   : /\.css$/,
-				loaders: "css?sourceMap!resolve-url"
+				loader: "style-loader!css-loader?sourceMap"
 			},
 			{
 				test: /(\.sass$|\.scss$)/,
