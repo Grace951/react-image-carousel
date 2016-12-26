@@ -64,7 +64,12 @@ var config = {
   externals: {
     'react': 'react', // Case matters here 
     //'react-dom' : 'reactDOM', // Case matters her
-    'react-addons-css-transition-group' : 'ReactCSSTransitionGroup'
+    'react-addons-transition-group': {
+      commonjs: 'react-addons-transition-group',
+      commonjs2: 'react-addons-transition-group',
+      amd: 'react-addons-transition-group',
+      root: ['React','addons','TransitionGroup']
+    }
   },  
 };
 
