@@ -62,14 +62,9 @@ var config = {
   },
   plugins: plugins,
   externals: {
-    'react': 'react', // Case matters here 
-    //'react-dom' : 'reactDOM', // Case matters her
-    'react-addons-transition-group': {
-      commonjs: 'react-addons-transition-group',
-      commonjs2: 'react-addons-transition-group',
-      amd: 'react-addons-transition-group',
-      root: ['React','addons','TransitionGroup']
-    }
+    'react': { commonjs: 'react', commonjs2: 'react', amd: 'react', root: 'React' },
+    'react-dom': { commonjs: 'react-dom', commonjs2: 'react-dom', amd: 'react-dom', root: 'ReactDOM' },
+    'react-addons-css-transition-group': { commonjs: 'react-addons-css-transition-group', commonjs2: 'react-addons-css-transition-group', amd: 'react-addons-css-transition-group', root: ['React','addons','CSSTransitionGroup'] }
   },  
 };
 

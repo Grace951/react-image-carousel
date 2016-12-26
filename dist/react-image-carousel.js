@@ -1,12 +1,12 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("react"), require("ReactCSSTransitionGroup"));
+		module.exports = factory(require("react"), require("react-addons-css-transition-group"));
 	else if(typeof define === 'function' && define.amd)
-		define("react-image-carousel", ["react", "ReactCSSTransitionGroup"], factory);
+		define("react-image-carousel", ["react", "react-addons-css-transition-group"], factory);
 	else if(typeof exports === 'object')
-		exports["react-image-carousel"] = factory(require("react"), require("ReactCSSTransitionGroup"));
+		exports["react-image-carousel"] = factory(require("react"), require("react-addons-css-transition-group"));
 	else
-		root["react-image-carousel"] = factory(root["react"], root["ReactCSSTransitionGroup"]);
+		root["react-image-carousel"] = factory(root["React"], root["React"]["addons"]["CSSTransitionGroup"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_298__, __WEBPACK_EXTERNAL_MODULE_300__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
