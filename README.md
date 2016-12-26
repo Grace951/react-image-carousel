@@ -13,7 +13,7 @@ React image carousel is a React component for building image galleries and carou
 * Prev/Next image
 
 ## Live Demo 
-Live demo: [``]()
+Live demo: [`https://grace951.github.io/react-image-carousel/`](https://grace951.github.io/react-image-carousel/)
 
 
 
