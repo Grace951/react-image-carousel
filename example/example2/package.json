@@ -12,6 +12,7 @@
   "author": "Ching-Ching Yeh <learningg@gmail.com> (https://github.com/Grace951)",
   "license": "MIT",
   "dependencies": {
+    "react-dom": "^15.4.1",
     "react-image-carousel": "^1.0.9"
   },
   "devDependencies": {

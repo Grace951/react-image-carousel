@@ -18,5 +18,5 @@ render((<div className="my-carousel">
 			<Carousel images={images} 
 						thumb={true}
 						loop={true}
-						autoplay={3000}/>
+						autoplay={5000}/>
 </div>), document.getElementById("app"));
