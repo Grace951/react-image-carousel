@@ -140,7 +140,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			value: function setCurrent(id) {
 				var images = this.props.images || [];
 				if (this.props.loop) {
-					id = id < 0 ? (id + images.length) % images.length : id % images.length;
+					id = (id + images.length) % images.length;
 				} else {
 					id = id < 0 ? 0 : id >= images.length ? images.length - 1 : id;
 				}
@@ -160,6 +160,7 @@ return /******/ (function(modules) { // webpackBootstrap
 						_react2.default.createElement(
 							_reactAddonsCssTransitionGroup2.default,
 							{ transitionName: 'carouselContent',
+								transitionEnterTimeout: 500,
 								transitionLeave: false },
 							_react2.default.createElement('img', { src: cImage, key: cImage })
 						)

@@ -41,8 +41,7 @@ class Carousel extends React.Component{
 	setCurrent(id){
 		let images = this.props.images || [];
 		if (this.props.loop){
-			id = (id < 0)	? (id + images.length) % images.length
-							: id % images.length;
+			id = (id + images.length) % images.length;
 		}else{
 			id = (id < 0)? 0: ((id >= images.length)? images.length - 1 : id);
 		}
@@ -54,7 +53,8 @@ class Carousel extends React.Component{
 		return (
 			<div className="carousel">
 				<div className="carousel-main" alt="">
-				<ReactCSSTransitionGroup transitionName="carouselContent" 
+				<ReactCSSTransitionGroup transitionName="carouselContent"
+						transitionEnterTimeout={500}
 						transitionLeave={false}	>
 					<img src={cImage} key={cImage}  />
 				</ReactCSSTransitionGroup>
