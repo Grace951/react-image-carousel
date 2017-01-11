@@ -1,6 +1,3 @@
-import 'babel-polyfill';
-require('./sass/main.sass');
-
 import React from 'react';
 import {Footer} from './Footer';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';

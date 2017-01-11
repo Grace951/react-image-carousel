@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "react-dom": "^15.4.1",
-    "react-image-carousel": "^1.0.14"
+    "react-image-carousel": "^1.0.15"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
