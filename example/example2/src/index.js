@@ -1,6 +1,6 @@
 import './sass/main.sass';
 import "font-awesome-sass-loader";
-require("../node_modules/react-image-carousel/lib/css/main.css");
+require("../node_modules/react-image-carousel/lib/css/main.min.css");
 
 require.context('./img', true, /\.?/);
 

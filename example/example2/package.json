@@ -8,11 +8,13 @@
     "open:src": "babel-node tools/srcServer.js",
     "lint": "node_modules/.bin/esw webpack.config.* src tools",
     "lint:watch": "npm run lint -- --watch",
-	"build": "babel-node tools/build.js"
+    "build": "babel-node tools/build.js"
   },
   "author": "Ching-Ching Yeh <learningg@gmail.com> (https://github.com/Grace951)",
   "license": "MIT",
   "dependencies": {
+    "react": "^15.4.2",
+    "react-addons-css-transition-group": "^15.4.2",
     "react-dom": "^15.4.1",
     "react-image-carousel": "^1.0.15"
   },
