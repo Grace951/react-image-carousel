@@ -1,6 +1,6 @@
 {
   "name": "react-image-carousel",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "simple react image carousel",
   "main": "lib/ReactImageCarousel.js",
   "scripts": {
@@ -18,7 +18,7 @@
   "peerDependencies": {
     "react": "^15.0.0",
     "react-addons-css-transition-group": "^15.0.0"
-  },  
+  },
   "devDependencies": {
     "babel-cli": "^6.10.1",
     "babel-core": "^6.18.2",
