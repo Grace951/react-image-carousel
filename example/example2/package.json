@@ -13,11 +13,11 @@
 	"author": "Ching-Ching Yeh <learningg@gmail.com> (https://github.com/Grace951)",
 	"license": "MIT",
 	"dependencies": {
+		"prop-types": "^15.6.1",
 		"react": "^16.4.0",
-		"react-transition-group": "^2.3.1",
 		"react-dom": "^16.4.0",
-		"react-image-carousel": "^2.0.5",
-		"prop-types": "^15.6.1"
+		"react-image-carousel": "^2.0.6",
+		"react-transition-group": "^2.3.1"
 	},
 	"devDependencies": {
 		"babel-cli": "^6.18.0",
