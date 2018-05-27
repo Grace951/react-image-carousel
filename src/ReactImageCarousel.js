@@ -1,6 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Footer} from './Footer';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import {
+	CSSTransition,
+	TransitionGroup
+} from 'react-transition-group';
+
+const Fade = ({ children, ...props }) => (
+	<CSSTransition
+		{...props}
+		timeout={{enter:500, exit:0}}
+		classNames="carouselContent"
+	>
+		{children}
+	</CSSTransition>
+);
+
 
 class Carousel extends React.Component{
 	constructor(props) {
@@ -46,28 +61,26 @@ class Carousel extends React.Component{
 	}
 	render(){
 		let images = this.props.images || [];
-		let cImage= images[this.state.currentId];
+		let cImage = images[this.state.currentId];
 		return (
 			<div className="carousel">
 				<div className="carousel-main" alt="">
-				<ReactCSSTransitionGroup transitionName="carouselContent"
-						transitionEnterTimeout={500}
-						transitionLeave={false}	>
+					<TransitionGroup className='todo-list'>
+						<Fade key={this.state.currentId}>
 					<img src={cImage} key={cImage}  />
-				</ReactCSSTransitionGroup>
+						</Fade>	
+					</TransitionGroup>
 				</div>
-				<div className="prev" onClick={this.subCurrent}/>
-				<div className="next" onClick={this.addCurrent}/>
-				<Footer images={images} currentId={this.state.currentId} setCurrent={this.setCurrent} thumb={this.props.thumb} />
+				<Footer images={images} currentId={this.state.currentId} setCurrent={this.setCurrent} thumb={this.props.thumb}/>
 			</div>
 		);
 	}
 }
 Carousel.propTypes = {
-  images: React.PropTypes.array.isRequired,
-  thumb: React.PropTypes.bool,
-  loop: React.PropTypes.bool ,
-  autoplay: React.PropTypes.number 
+  images: PropTypes.array.isRequired,
+  thumb: PropTypes.bool,
+  loop: PropTypes.bool ,
+  autoplay: PropTypes.number 
 };
 
 Carousel.defaultProps = {
