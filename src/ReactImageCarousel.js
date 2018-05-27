@@ -65,12 +65,14 @@ class Carousel extends React.Component{
 		return (
 			<div className="carousel">
 				<div className="carousel-main" alt="">
-					<TransitionGroup className='todo-list'>
+					<TransitionGroup className=''>
 						<Fade key={this.state.currentId}>
-					<img src={cImage} key={cImage}  />
+							<img src={cImage} key={cImage}  />
 						</Fade>	
 					</TransitionGroup>
 				</div>
+				<div className="prev" onClick={this.subCurrent}/>
+				<div className="next" onClick={this.addCurrent}/>
 				<Footer images={images} currentId={this.state.currentId} setCurrent={this.setCurrent} thumb={this.props.thumb}/>
 			</div>
 		);

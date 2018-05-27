@@ -1,72 +1,43 @@
 {
-  "_from": "react-image-carousel@^2.0.4",
-  "_id": "react-image-carousel@2.0.4",
-  "_inBundle": false,
-  "_integrity": "sha512-sWSfaT1qWu89T/3IHEdai6jh/0RJr+iYqRO1JSgOvAxClCGYfMkkfTzGWSZcH6T9p87sFeGvlb8ki+Ffy70aHQ==",
-  "_location": "/react-image-carousel",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "range",
-    "registry": true,
-    "raw": "react-image-carousel@^2.0.4",
-    "name": "react-image-carousel",
-    "escapedName": "react-image-carousel",
-    "rawSpec": "^2.0.4",
-    "saveSpec": null,
-    "fetchSpec": "^2.0.4"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/react-image-carousel/-/react-image-carousel-2.0.4.tgz",
-  "_shasum": "82fb1fa4a3fea1732201e8d7119ca0a78c2f4cb4",
-  "_spec": "react-image-carousel@^2.0.4",
-  "_where": "D:\\ChingChing\\project\\react-image-carousel0\\example\\example2",
-  "author": {
-    "name": "Ching-Ching Yeh",
-    "email": "learningg@gmail.com",
-    "url": "https://github.com/Grace951"
-  },
-  "bugs": {
-    "url": "https://github.com/Grace951/react-image-carousel/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
-  "description": "simple react image carousel",
-  "devDependencies": {
-    "babel-cli": "^6.10.1",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-react": "^6.24.0",
-    "copyfiles": "^1.0.0",
-    "prop-types": "^15.6.1",
-    "react": "^16.4.0",
-    "react-transition-group": "^2.3.1"
-  },
-  "homepage": "https://github.com/Grace951/react-image-carousel",
-  "keywords": [
-    "react",
-    "image",
-    "carousel",
-    "responsive"
-  ],
-  "license": "MIT",
-  "main": "lib/ReactImageCarousel.js",
-  "name": "react-image-carousel",
-  "peerDependencies": {
-    "react": "^16.4.0",
-    "react-transition-group": "^2.3.1",
-    "prop-types": "^15.6.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/Grace951/react-image-carousel.git"
-  },
-  "scripts": {
-    "compile": "babel -d lib/ src/ && copyfiles -f src/main.min.css lib/css",
-    "prepare": "npm run compile"
-  },
-  "version": "2.0.5"
+	"name": "react-image-carousel",
+	"version": "2.0.18",
+	"description": "simple react image carousel",
+	"main": "lib/ReactImageCarousel.js",
+	"scripts": {
+		"compile": "babel -d lib/ src/ && copyfiles -f src/main.min.css lib/css",
+		"prepare": "npm run compile"
+	},
+	"keywords": [
+		"react",
+		"image",
+		"carousel",
+		"responsive"
+	],
+	"author": "Ching-Ching Yeh <learningg@gmail.com> (https://github.com/Grace951)",
+	"license": "MIT",
+	"peerDependencies": {
+		"react": "^16.4.0",
+		"react-transition-group": "^2.3.1",
+		"prop-types": "^15.6.1"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.10.1",
+		"babel-core": "^6.26.0",
+		"babel-loader": "^7.1.0",
+		"babel-plugin-transform-object-rest-spread": "^6.26.0",
+		"babel-preset-es2015": "^6.9.0",
+		"babel-preset-react": "^6.24.0",
+		"copyfiles": "^1.0.0",
+		"prop-types": "^15.6.1",
+		"react": "^16.4.0",
+		"react-transition-group": "^2.3.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/Grace951/react-image-carousel.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Grace951/react-image-carousel/issues"
+	},
+	"homepage": "https://github.com/Grace951/react-image-carousel"
 }
